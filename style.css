@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding-inline-start: 0;
+}
+body {
+  font-family:'Gill Sans', 'Gill Sans MT';
+  background-color: black;
+}
+.container {
+  width: 800px;
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .container {
+    width: 600px;
+  }
+}
+@media (max-width: 667px) {
+  .container {
+    width: 350px;
+  }
+}
+
+.inp-container {
+  margin-top: 20px;
+  background-color: #36383d;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+input[type="text"] {
+  width: 85%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  background-color: #292c31;
+  border: 3px solid #ffffff1f;
+  color: white;
+  font-size: 16px;
+  &:focus {
+    outline: none;
+  }
+}
+.btn {
+  background-color: #292c31;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 3px solid #ffffff1f;
+}
+.data-container {
+  margin-top: 20px;
+  background-color: #36383d;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.data-container > .repo {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #292c31;
+  border: 3px solid #ffffff1f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 667px) {
+  .repo {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.repo .name {
+  font-size: 17px;
+}
+.repo .info {
+  display: flex;
+  gap: 10px;
+}
+.info .stars, 
+.info a {
+  text-align: center;
+  color: white;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.info .stars {
+  min-width: 90px;
+  background-color: #009688;
+}
+.info a {
+  width: 90px;
+  background-color: #E91E63;
+  text-decoration: none;
+}
+
+
+
